@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background:#000000 ;
+}
+nav {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(50,28,112);
+    background: #f0eadb;
+    overflow: hidden;
+    transition: 1s ease;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 200;
+}
+nav:hover {
+    cursor: pointer;
+}
+nav .navbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .navbox .navbefore {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .navbox .navbefore .navmenut {
+    display: none;
+    width: 90%;
+    transition: 1s ease;
+    opacity: 0;
+}
+nav .navbox .navbefore .navlogot {
+    width: 90%;
+    display: flex;
+    transition: 1s ease;
+}
+
+
+nav .navbox .navafter {
+    width: 90%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items:center;
+    padding: 20px auto;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    gap: 30px;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    transition: 500ms ease;
+    opacity: 0;
+}
+nav .navbox .navafter img {
+    width: 90%;
+}
+
+.ghost {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    top: 0px;
+    z-index: 190;
+    opacity: 0;
+    display: none;
+    transition: 1s ease;
+}
+
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background:url(img/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero .herobox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .herobox .logo {
+    width: 80%;
+}
+.hero .herobox .logo img {
+    width: 100%;
+}
